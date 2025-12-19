@@ -1,0 +1,268 @@
+/* =========================
+   COLOR VARIABLES
+   ========================= */
+
+:root {
+  --tan-bg: #c9ab8b;
+  --cream-bg: #f7efe2;
+  --dark-brown: #2b2622;
+  --text-dark: #2b2622;
+  --text-light: #f7efe2;
+}
+
+/* =========================
+   PAGE BACKGROUND
+   ========================= */
+
+body {
+  margin: 0;
+  background: var(--tan-bg);
+  font-family: "Courier Prime", monospace;
+}
+
+/* =========================
+   FRAME
+   ========================= */
+
+.frame {
+  margin: 80px;
+  background: var(--cream-bg);
+  border: 2px solid var(--dark-brown);
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+  background: var(--dark-brown);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 32px;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 34px;
+  letter-spacing: 2px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Fraunces", serif;
+  font-size: 5.2rem;
+  margin-top: 180px;
+  margin-bottom: 10px;
+}
+
+/* ⬇ UPDATED: no italics + slightly smaller */
+.subtitle {
+  font-style: normal;
+  font-size: 1.25rem;
+  margin-top: 6px;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+/* =========================
+   CONTENT SECTIONS
+   ========================= */
+
+.content-section {
+  padding: 120px 140px;
+}
+
+.content-section.dark {
+  background: var(--dark-brown);
+  color: var(--text-light);
+}
+
+.content-section h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* ⬇ UPDATED: smaller body text */
+.about-text {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.about-image-frame {
+  border: 2px solid var(--cream-bg);
+  padding: 10px;
+}
+
+.about-image-frame img {
+  width: 260px;
+  display: block;
+}
+
+/* =========================
+   PROJECTS
+   ========================= */
+
+.projects-section {
+  background: var(--cream-bg);
+  padding-top: 70px;
+}
+
+.projects-section h2 {
+  margin-bottom: 24px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 5px;
+}
+
+.project-card {
+  background: var(--cream-bg);
+  border: 2px solid var(--dark-brown);
+  padding: 10px;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card-inner {
+  background: var(--dark-brown);
+  min-height: 135px;
+  padding: 14px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-eyebrow {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cream-bg);
+  opacity: 0.85;
+}
+
+.project-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.3rem;
+  color: var(--cream-bg);
+  margin-top: 30px;
+  line-height: 1.25;
+}
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-section {
+  padding: 60px 140px;
+  background: var(--dark-brown);
+  color: var(--text-light);
+}
+
+.contact-section h2,
+.contact-blurb {
+  color: var(--text-light);
+}
+
+/* ⬇ UPDATED: smaller description text */
+.contact-blurb {
+  max-width: 720px;
+  font-size: 1.05rem;
+  margin: 0 0 36px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 80px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: var(--text-light);
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--text-light);
+  padding-bottom: 6px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .frame {
+    margin: 40px;
+  }
+
+  .content-section {
+    padding: 80px 40px;
+  }
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

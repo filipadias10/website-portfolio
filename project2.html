@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DC Fast EV Charger Interface</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fraunces -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <!-- Courier Prime -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="frame">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="mcmaster-beige.png" alt="McMaster University" class="logo" />
+
+        <nav class="nav-links">
+          <a href="index.html">Return to Main Page</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- TITLE SECTION (LIGHT BEIGE) -->
+    <section class="content-section projects-section">
+      <h2>DC Fast EV Charger Interface</h2>
+
+      <p style="
+        font-family: 'Courier Prime', monospace;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        color: var(--text-dark);
+      ">
+        High Power Electronics Lab (HiPEL) @ McMaster University
+      </p>
+    </section>
+
+    <!-- MAIN CONTENT (DARK) -->
+    <section class="content-section dark">
+
+      <!-- INTRO -->
+      <h3 style="
+        font-family: 'Fraunces', serif;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      ">
+        Introduction to the Project
+      </h3>
+
+      <div style="
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 80px;
+        align-items: start;
+      ">
+
+        <!-- TEXT -->
+        <div style="
+          font-family: 'Courier Prime', monospace;
+          font-size: 1rem;
+          line-height: 1.7;
+          max-width: 520px;
+        ">
+          <p>
+            This project focuses on the design of a multi-screen user interface for a
+            DC fast electric vehicle charger with vehicle-to-vehicle (V2V) capability.
+            The system was programmed in C/C++ using the Arduino IDE and communicates
+            with charging hardware through Modbus, CAN, and RS485 shield protocols.
+          </p>
+
+          <p style="margin-top: 20px;">
+            The interface guides users through a charging session, beginning with system
+            initialization and communication verification with the charging module,
+            followed by configuration of charging parameters. Multiple screens allow
+            users to select charging modes. Live charging data is continuously acquired
+            through the CAN shield and RS485 modules and displayed. A summary screen is
+            provided for each completed charging session.
+          </p>
+        </div>
+
+        <!-- VIDEO -->
+        <div style="
+          border: 2px solid var(--cream-bg);
+          padding: 20px;
+          width: 420px;
+          box-sizing: border-box;
+        ">
+          <video
+            src="v2v_website_video.mp4"
+            controls
+            muted
+            playsinline
+            style="
+              width: 100%;
+              height: auto;
+              display: block;
+            ">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+
+      <!-- COMPONENTS + SKILLS GRID -->
+      <div style="
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 80px;
+        margin-top: 90px;
+        align-items: start;
+      ">
+
+        <!-- COMPONENTS USED -->
+        <div>
+          <h3 style="
+            font-family: 'Fraunces', serif;
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+          ">
+            Components Used
+          </h3>
+
+          <ul style="
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-left: 20px;
+          ">
+            <li>Arduino GIGA R1 WiFi</li>
+            <li>Arduino GIGA Display Shield</li>
+            <li>CAN-BUS Shield V2.0</li>
+            <li>Arduino RS485 Shield</li>
+          </ul>
+        </div>
+
+        <!-- SKILLS ACQUIRED -->
+        <div>
+          <h3 style="
+            font-family: 'Fraunces', serif;
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+          ">
+            Skills Acquired
+          </h3>
+
+          <ul style="
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-left: 20px;
+          ">
+            <li>C/C++ embedded systems programming in the Arduino IDE</li>
+            <li>Modbus, CAN, and RS485 communication protocol implementation</li>
+            <li>Touchscreen UI development</li>
+            <li>System communication verification and error handling</li>
+            <li>Hardware wiring of Arduino with CAN and RS485 shields</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>

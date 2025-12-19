@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Design Course Projects</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fraunces -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <!-- Courier Prime -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="frame">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="mcmaster-beige.png" alt="McMaster University" class="logo" />
+        <nav class="nav-links">
+          <a href="index.html">Return to Main Page</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- TITLE SECTION -->
+    <section class="content-section">
+      <h1 style="font-family: 'Fraunces', serif; font-size: 3.8rem; margin-bottom: 10px;">
+        Design Course Projects
+      </h1>
+
+      <p style="
+        font-family: 'Courier Prime', monospace;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-top: 0;
+      ">
+        ENGINEER 1P13 @ McMaster University
+      </p>
+    </section>
+
+    <!-- DARK CONTENT -->
+    <section class="content-section dark">
+
+      <!-- PROJECT 1 -->
+      <div style="
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 80px;
+        margin-bottom: 120px;
+        align-items: center;
+      ">
+        <div>
+          <h2 style="font-size: 2.1rem; white-space: nowrap;">
+            Project 1 — International Airport
+          </h2>
+
+          <p style="
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            max-width: 560px;
+          ">
+            This project focused on the design and simulation of multiple subsystems
+            within an international airport environment. A passenger ticket
+            check-in system was developed using Python, a luggage handling mechanism
+            was designed using Autodesk Inventor, and Q-arm code was implemented
+            to control the movement of luggage across the designed mechanism,
+            simulating automated baggage sorting and system coordination.
+          </p>
+        </div>
+
+        <div style="
+          border: 2px solid var(--cream-bg);
+          padding: 20px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          box-sizing: border-box;
+        ">
+          <img src="project1.1_photo1.png" alt="Airport system simulation interface"
+               style="width: 100%; height: auto; display: block;" />
+
+          <img src="project1.1_photo2.png" alt="Luggage handling mechanism CAD model"
+               style="width: 100%; height: auto; display: block;" />
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div style="
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 80px;
+        margin-bottom: 120px;
+        align-items: center;
+      ">
+        <div>
+          <h2 style="font-size: 2.1rem; white-space: nowrap;">
+            Project 2 — Wastewater Filtration
+          </h2>
+
+          <p style="
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            max-width: 560px;
+          ">
+            This project focused on the design and analysis of a wastewater
+            filtration system with an emphasis on material selection and
+            sustainability. Granta EduPack was used to evaluate candidate
+            filtration materials based on mechanical and physical properties,
+            perform eco-audits to assess environmental impact, and compare options
+            using Ashby charts. Technical calculations, including porosity analysis,
+            were conducted to assess filtration effectiveness and support design
+            decisions.
+          </p>
+        </div>
+
+        <div style="
+          border: 2px solid var(--cream-bg);
+          padding: 20px;
+          width: 100%;
+          box-sizing: border-box;
+        ">
+          <img src="photo1.2_photo1.png"
+               alt="Wastewater filtration material selection visualization"
+               style="width: 100%; height: auto; display: block;" />
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div style="
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 80px;
+        align-items: center;
+      ">
+        <div>
+          <h2 style="font-size: 2.1rem;">
+            Project 3 — Multi-sensory Cooking Thermometer
+          </h2>
+
+          <p style="
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            max-width: 560px;
+          ">
+            This project focused on the design and implementation of a
+            multi-sensory cooking thermometer using an Arduino embedded system
+            in C/C++. Temperature sensors were integrated with audio (speaker)
+            and visual feedback (LED) components to provide live alerts, and code
+            was written to process sensor data and trigger outputs, improving
+            accessibility and safety during cooking.
+          </p>
+        </div>
+
+        <div style="
+          border: 2px solid var(--cream-bg);
+          padding: 20px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          box-sizing: border-box;
+        ">
+          <img src="photo1.3_photo1.png"
+               alt="Arduino wiring and sensor setup"
+               style="width: 100%; height: auto; display: block;" />
+
+          <img src="photo1.3_photo2.png"
+               alt="Thermometer prototype with LED and audio feedback"
+               style="width: 100%; height: auto; display: block;" />
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
